@@ -1,0 +1,48 @@
+1. (4 puntos) Indique los comandos para crear subir la versi´on del proyecto git a un repositorio
+remoto.
+R=para crear un repositorio se debe ir a github.com ,crear una cuenta ,luego saldra un boton verde que dice nuevo repositorio,luego de crearlo
+nos dirigimos a el codigo o carpeta que queramos subir ,lo abrimos en la terminal integrada y escibimos los siguientes comandos:
+1. Git init
+2.Git add
+3.Git status(opcional)
+4.Git commit -m "algun texto"
+5.git branch -m nombre de la rama(en el caso que las ramas no sean iguales)
+6.git remote add origin URL del repositorio
+7.git pull origin main
+8.git push -u origin main
+
+2. (4 puntos) ¿C´omo se puede utilizar el c´odigo de un proyecto git en un repositorio remoto
+(github) en un computador local?
+R=abres el archivo en git hub luego presionas raw,se abrira el archivo en otra pestaña ,le das click derecho en cualquier parte y seleccionas guardar como
+,luego lo mueves a tu carpeat desde descargas al directorio que se usara.
+
+3. (4 puntos) Si se implementa un c´odigo en python que crea un objeto de una clase abstracta,
+¿Qu´e sucede al ejecutar dicho c´odigo?
+R=ocurre un error debido a que una clase abstracta nose puede llamar directamente.
+
+4. (4 puntos) ¿Qu´e significa que un m´etodo tenga el decorador @abstractmethod?
+R= significa que ese metodo pertenece a una clase abstracta y no se puede utilizar directamnet.
+
+5. (4 puntos) Indique 3 eventos que pueden ejecutarse en una interfaz gr´afica de usuario.
+R=click,cerrar una ventana,cambiar el tamaño de una ventana.
+
+6. (4 puntos) ¿Qu´e es el ciclo de eventos?
+R=es un ciclo que se ejecuta al abrir una ventana o programa con interfaz grafica ,este siempre esta pendiente a cualquier señal que el usuario genere al interactura con la ventana 
+para reaccionar a la señal que el usuario mando,ej: click en abrir ventana,abre una ventana.
+
+7. (4 puntos) Si desde la ventana principal de un prograna se lanza un objeto de clase QDialog
+¿Es posible ignorarlo y seguir utilizando la ventana principal?
+R=si,es posible ignorarlo y seguir utilizando la ventana principal mientras el QDialog no tenaga un Modal asignado ya que este bloquearia la vnetana principal
+hasta que se termine de interactuar con el QDialog.
+
+8. (4 puntos) Mencione al menos 5 componentes gr´aficos de PyQt6
+R=QLabel,QPushbutton,QLineedit,QCheckbox,QMessageBox.
+
+9. (4 puntos) Si se requiere de ingresar datos num´eticos, qu´e alternativas existen de componentes
+en PyQt6
+R=QLineedit,QSpinBox
+
+10. (4 puntos) ¿C´omo es posible utilizar una interfaz creada con Qt Designer en un c´odigo fuente
+en python con PyQt6?
+R=luego de crear la interfaz con qt designer guarde el archivo con nombrearchivo.ui luego vaya a la terminal y ejecute el comando pyuic6 -x nombre_archivo.ui -o nombre_archivo.py
+
