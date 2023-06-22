@@ -19,14 +19,14 @@ class Ventana(QtWidgets.QMainWindow, Ui_VentanaPrincipal):
         super(Ventana, self).__init__(*args, **kwargs)
         #Implementación de Ui_VentanaPrincipal
         self.setupUi(self)
-        self.mascotas=[]
-        self.butonguardarmascota.clicked.connect(self.guardar_mascota)
+        self.mascotas=[]                                                    #agregado
+        self.butonguardarmascota.clicked.connect(self.guardar_mascota)      #agregado
     
     def guardar_mascota(self):
         nombre = self.nombre.text()
         especie = self.especie.text()
         edad = int(self.edad.text())
-        peso = float(self.peso.text())
+        peso = float(self.peso.text())                                     #funcionagregada
         mascota_nueva = Mascota(nombre, especie, edad, peso)
         self.mascotas.append(mascota_nueva)
         QtWidgets.QMessageBox.information(self, "Guardado", "Mascota guardada con éxito",QtWidgets.QMessageBox.standardButton.Ok,QtWidgets.QMessageBox.standardButton.Ok)
